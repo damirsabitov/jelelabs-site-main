@@ -26,20 +26,9 @@ document.addEventListener('mouseup', (e) => {
 // Получаем все ссылки в меню
 const navLinks = document.querySelectorAll('.nav__link');
 
-// Функция, которая удаляет класс active у всех ссылок
-function removeActiveClass() {
-  navLinks.forEach((link) => {
-    link.classList.remove('active');
-  });
-}
-
-// Функция, которая добавляет класс active к кликнутой ссылке
-function addActiveClass(e) {
-  removeActiveClass();
-  e.target.classList.add('active');
-}
-
-// Вызываем функцию при клике на ссылку
+// Удаляем класс active у всех ссылок при клике на любую ссылку
 navLinks.forEach((link) => {
-  link.addEventListener('click', addActiveClass);
+  link.addEventListener('click', (e) => {
+    navLinks.forEach((l) => l.blur()); // Удаляем фокус с других ссылок
+  });
 });
