@@ -132,16 +132,13 @@ body {
     opacity: 0;
 }
 
-.nav__link:focus {
-    background-image: linear-gradient(81.72deg, #70ff00 2.53%, #0dffe3 93.99%);
-    background-size: 100% 100%;
-    background-position: 0% 0%;
-    transition: background-position 0.3s ease-in-out;
-  }
-
-.nav__link:hover::before {
-    opacity: 1;
+.nav__link--active::before,
+.nav__link:hover::before,
+.nav__link:focus::before,
+.nav__link:active::before {
+  opacity: 1;
 }
+
 
 /* * slider */
 

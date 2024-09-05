@@ -1,5 +1,6 @@
 const button = document.querySelector('.menu-button');
 const navList = document.querySelector('.mobile');
+const navLinks = document.querySelectorAll('.nav__link');
 
 // Add an event listener to the button for mousedown event
 button.addEventListener('mousedown', (e) => {
@@ -15,20 +16,23 @@ button.addEventListener('mousedown', (e) => {
 document.addEventListener('mouseup', (e) => {
   // Check if the click is not on the button or the nav list
   if (!button.contains(e.target) && !navList.contains(e.target)) {
-    // Remove the 'clicked' class from the button
-    button.classList.remove('clicked');
+    // Не удаляем классы, если клик был на ссылке
+    if (!e.target.classList.contains('nav__link')) {
+      // Remove the 'clicked' class from the button
+      button.classList.remove('clicked');
 
-    // Remove the 'show' class from the nav list
-    navList.classList.remove('show');
+      // Remove the 'show' class from the nav list
+      navList.classList.remove('show');
+    }
   }
 });
 
-// Получаем все ссылки в меню
-const navLinks = document.querySelectorAll('.nav__link');
-
-// Удаляем класс active у всех ссылок при клике на любую ссылку
+// Добавляем обработчик клика на ссылки
 navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
-    navLinks.forEach((l) => l.blur()); // Удаляем фокус с других ссылок
+    // Удаляем класс active у всех ссылок
+    navLinks.forEach((l) => l.classList.remove('active'));
+    // Добавляем класс active к кликнутой ссылке
+    e.target.classList.add('active');
   });
 });
