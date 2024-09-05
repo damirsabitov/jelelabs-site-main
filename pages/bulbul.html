@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/new_reset.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>JELELABS - Лаборатория IT решений</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__start">
+          <a href="../index.html" class="nav__logo">
+            <img src="../images/logo.svg" alt="logo" />
+            <div class="nav__logo__text">
+              <p class="nav__logo__title">JELELABS</p>
+              <p class="nav__logo__description">лаборатория it решений</p>
+            </div>
+          </a>
+        </div>
+        <div class="nav__end">
+          <button class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__list mobile">
+            <li><a href="markting.html" class="nav__link">Маркетинг</a></li>
+            <li><a href="sites.html" class="nav__link">Сайты</a></li>
+            <li><a href="apps.html" class="nav__link">Приложения</a></li>
+            <li><a href="aso.html" class="nav__link">ASO</a></li>
+            <li><a href="ai.html" class="nav__link">AI</a></li>
+            <li><a href="design.html" class="nav__link">Дизайн</a></li>
+          </ul>
+          <script>window.addEventListener('resize', (e) => {
+              if (window.innerWidth >= 0.6) {
+                const button = document.querySelector('.menu-button');
+                const navList = document.querySelector('.mobile');
+
+                // Add an event listener to the button
+                button.addEventListener('click', () => {
+                  // Toggle the 'clicked' class on the button
+                  button.classList.toggle('clicked');
+
+                  // Toggle the 'show' class on the nav list
+                  navList.classList.toggle('show');
+                });
+
+                // Add an event listener to the document
+                document.addEventListener('click', (e) => {
+                  // Check if the click is not on the button or the nav list
+                  if (!button.contains(e.target) && !navList.contains(e.target)) {
+                    // Remove the 'clicked' class from the button
+                    button.classList.remove('clicked');
+
+                    // Remove the 'show' class from the nav list
+                    navList.classList.remove('show');
+                  }
+                });
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section">
+      <div class="container container--bulbul ">
+        <div class="bulbul__titles--one">
+          <h1 class="bulbul__title--one">Bülbül</h1>
+          <p class="bulbul__text--one">Bülbül - это социальная сеть, созданная для тесного сотрудничества, общения и
+            информирования пользователей со всего мира, независимо от их местоположения.</p>
+        </div>
+        <div class="bulbul__image apps__image--one"><img src="../images/hellobulbul.png" alt="iphone14"></div>
+        <div class="bulbul__image apps__image--two"><img src="../images/iphone-lenta.png" alt="iphone14-lenta"></div>
+        <div class="bulbul__text__image">
+          <div class="bulbul__text--two">
+            <div class="bulbul__text--paragraph">В приложении реализованы все необходимые функции для общения. </div>
+          </div>
+          <div class="bulbul__image--three"><img src="../images/player.png" alt="img"></div>
+        </div>
+        <div class="bulbul__image--four"><img src="../images/ladosh.png" alt="img"></div>
+        <div class="bulbul__image--five"><img src="../images/player.png" alt="img"></div>
+        <div class="bulbul__image--six"><img src="../images/love.png" alt="img"></div>
+        <div class="bulbul__titles--three">
+          <h1 class="bulbul__title--absolute">Заголовок</h1>
+          <p class="bulbul__text--absolute">Описание функционала или какой-нибудь особенности приложения</p>
+        </div>
+        <div class="bulbul__image bulbul__image--seven"><img src="../images/iphone-lenta.png" alt="iphone14-lenta"></div>
+        <div class="bulbul__image bulbul__image--strelka"><img src="../images/strelka.png" alt="strelka"></div>
+        <div class="bulbul__titles--four">
+          <h1 class="bulbul__title--absolute">Заголовок</h1>
+          <p class="bulbul__text--absolute">Описание функционала или какой-нибудь особенности приложения</p>
+        </div>
+        <div class="bulbul__image bulbul__image--eight"><img src="../images/iphone-lenta.png" alt="iphone14-lenta"></div>
+        <div class="bulbul__titles--five">
+          <p class="bulbul__text--three">А еще приложение умеет вообще офигеть какую крутую штуку, вы даже не
+            представляете, но сейчас мы вам ее покажем</p>
+        </div>
+        <div class="bulbul__image bulbul__lenta--one">
+          <img src="../images/lentaview1.png" alt="img">
+        </div>
+        <div class="bulbul__image bulbul__lenta--two">
+          <img src="../images/lentaview2.png" alt="img">
+        </div>
+        <div class="bulbul__image bulbul__lenta--three">
+          <img src="../images/lentaview1.png" alt="img">
+        </div>
+        <div class="bulbul__image bulbul__lenta--four">
+          <img src="../images/lentaview2.png" alt="img">
+        </div>
+        <div class="bulbul__titles--six">
+          <p class="bulbul__text--three">Тут у нас элементы интерфейса, классно, если это можно было бы потыкать</p>
+        </div>
+        <div class="bulbul__themes__container">
+          <div class="bulbul__themes">
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Искусство</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Экономика</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Музыка</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Образование</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Кино</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Экономика</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Развлечения</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Еда</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Спорт</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Наука</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Технологии</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Путешествия</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Здоровье</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Мода</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Литература</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Игра</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Животные</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">История</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Автомобили</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Природа</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Фотография</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Дом и сад</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">DIY (сделай сам)</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Бизнес</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Психология</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Фитнес</a></div>
+            </div>
+            <div class="bulbul__theme--group">
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Астрология</a></div>
+              <div class="bulbul__theme"><a href="#" class="bulbul__theme--link">Социальные проблемы</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logos">
+        <a href="" class="footer__logo"><img src="../images/x.png" alt="x"></a>
+        <a href="" class="footer__logo"><img src="../images/instagram.png" alt="insta"></a>
+        <a href="" class="footer__logo"><img src="../images/youtube.png" alt="youtube"></a>
+        <a href="" class="footer__logo"><img src="../images/linkedIn.png" alt="in"></a>
+        <a href="" class="footer__logo"><img src="../images/vk.png" alt="vk"></a>
+      </div>
+
+      <div class="footer__info">
+        <h2 class="footer__title">Кейсы</h2>
+        <a href="#" class="footer__text">Приложения</a>
+        <a href="#" class="footer__text">Сайты</a>
+        <a href="#" class="footer__text">Чат боты</a>
+        <a href="#" class="footer__text">Маркетинг</a>
+        <a href="#" class="footer__text">AI</a>
+      </div>
+      <div class="footer__info">
+        <h2 class="footer__title">Презентации</h2>
+        <a href="#" class="footer__text">Для финтех</a>
+        <a href="#" class="footer__text">Для стартапов</a>
+        <a href="#" class="footer__text">Для CRM система</a>
+        <a href="#" class="footer__text">Для соц сетей </a>
+        <a href="#" class="footer__text">Collaboration features</a>
+      </div>
+      <div class="footer__info">
+        <h2 class="footer__title">Контакты</h2>
+        <a href="#" class="footer__text">Позвонить</a>
+        <a href="#" class="footer__text">Написать</a>
+        <a href="#" class="footer__text">Встретиться</a>
+      </div>
+
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

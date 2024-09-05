@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/new_reset.css">
+	<link rel="stylesheet" href="../styles/style.css">
+	<title>JELELABS - Лаборатория IT решений</title>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div class="nav__container">
+				<div class="nav__start">
+					<a href="../index.html" class="nav__logo">
+						<img src="../images/logo.svg" alt="logo" />
+						<div class="nav__logo__text">
+							<p class="nav__logo__title">JELELABS</p>
+							<p class="nav__logo__description">лаборатория it решений</p>
+						</div>
+					</a>
+				</div>
+				<div class="nav__end">
+					<button class="menu-button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="nav__list mobile">
+						<li><a href="markting.html" class="nav__link">Маркетинг</a></li>
+						<li><a href="sites.html" class="nav__link">Сайты</a></li>
+						<li><a href="apps.html" class="nav__link">Приложения</a></li>
+						<li><a href="aso.html" class="nav__link">ASO</a></li>
+						<li><a href="ai.html" class="nav__link">AI</a></li>
+						<li><a href="design.html" class="nav__link">Дизайн</a></li>
+					</ul>
+					<script>window.addEventListener('resize', (e) => {
+							if (window.innerWidth >= 0.6) {
+								const button = document.querySelector('.menu-button');
+								const navList = document.querySelector('.mobile');
+
+								// Add an event listener to the button
+								button.addEventListener('click', () => {
+									// Toggle the 'clicked' class on the button
+									button.classList.toggle('clicked');
+
+									// Toggle the 'show' class on the nav list
+									navList.classList.toggle('show');
+								});
+
+								// Add an event listener to the document
+								document.addEventListener('click', (e) => {
+									// Check if the click is not on the button or the nav list
+									if (!button.contains(e.target) && !navList.contains(e.target)) {
+										// Remove the 'clicked' class from the button
+										button.classList.remove('clicked');
+
+										// Remove the 'show' class from the nav list
+										navList.classList.remove('show');
+									}
+								});
+							}
+						});
+					</script>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="section">
+			<div class="container">
+				<div class="sites__container">
+					<div class="sites__item">
+						<h1 class="sites__title">Разработанные сайты</h1>
+						<h2 class="sites__discription">E-kommerce</h2>
+					</div>
+					<div class="sites__item sites__item--slides">
+
+						<div class="sites__item--flex">
+							<a class="sites__slide" href=""><img class="sites__slide--image" src="../images/slider01.png"
+									alt=""></a>
+							<a class="sites__slide" href="bulbul.html"><img class="sites__slide--image" src="../images/slider02.png"
+									alt=""></a>
+						</div>
+
+						<div class="sites__item--flex">
+							<a class="sites__slide" href=""><img class="sites__slide--image" src="../images/slider03.png"
+									alt=""></a>
+							<a class="sites__slide" href=""><img class="sites__slide--image" src="../images/slider03.png"
+									alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="abs_container--slide">
+			<img class="abs03 slider__abs" src="../images/bg03.png" alt="">
+			<img class="abs04 slider__abs" src="../images/bg04.png" alt="">
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logos">
+				<a href="" class="footer__logo"><img src="../images/x.png" alt="x"></a>
+				<a href="" class="footer__logo"><img src="../images/instagram.png" alt="insta"></a>
+				<a href="" class="footer__logo"><img src="../images/youtube.png" alt="youtube"></a>
+				<a href="" class="footer__logo"><img src="../images/linkedIn.png" alt="in"></a>
+				<a href="" class="footer__logo"><img src="../images/vk.png" alt="vk"></a>
+			</div>
+
+			<div class="footer__info">
+				<h2 class="footer__title">Кейсы</h2>
+				<a href="#" class="footer__text">Приложения</a>
+				<a href="#" class="footer__text">Сайты</a>
+				<a href="#" class="footer__text">Чат боты</a>
+				<a href="#" class="footer__text">Маркетинг</a>
+				<a href="#" class="footer__text">AI</a>
+			</div>
+			<div class="footer__info">
+				<h2 class="footer__title">Презентации</h2>
+				<a href="#" class="footer__text">Для финтех</a>
+				<a href="#" class="footer__text">Для стартапов</a>
+				<a href="#" class="footer__text">Для CRM система</a>
+				<a href="#" class="footer__text">Для соц сетей </a>
+				<a href="#" class="footer__text">Collaboration features</a>
+			</div>
+			<div class="footer__info">
+				<h2 class="footer__title">Контакты</h2>
+				<a href="#" class="footer__text">Позвонить</a>
+				<a href="#" class="footer__text">Написать</a>
+				<a href="#" class="footer__text">Встретиться</a>
+			</div>
+
+		</div>
+	</footer>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>
