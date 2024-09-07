@@ -1362,3 +1362,171 @@ h4 {
     margin-right: 90px;
     padding-top: 472px;
 }
+
+.finteh__items--eight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    margin-bottom: 34px;
+}
+
+.finteh__item--sixteen {
+    display: flex;
+    gap: 40px;
+}
+
+.finteh__item--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
+    min-height: 154px;
+}
+
+.finteh__title--small {
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: #000;
+}
+
+/* * finteh_media */
+
+@media (min-width: 1259px) {
+    .finteh__buttons--one {
+        display: none;
+    }
+
+    .finteh__paragraph--mobile {
+        display: none;
+    }
+
+    .finteh__paragraphs--mobile--one {
+        display: none;
+    }
+
+    .finteh__item--six>img {
+        display: none;
+    }
+}
+
+@media (max-width: 1258px) {
+    .finteh__items--one {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .finteh__item--two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+    }
+
+    .finteh__paragraph--two {
+        max-width: none;
+    }
+
+    .finteh__buttons {
+        float: none;
+    }
+
+    .finteh__item--three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 64px;
+    }
+
+    .finteh__image--two {
+        padding-top: 0;
+    }
+
+    .finteh__buttons--two {
+        display: none;
+    }
+
+    .finteh__buttons--one {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .finteh__item--four {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .finteh__paragraph--three {
+        max-width: 700px;
+        float: left;
+        padding-bottom: 32px;
+    }
+
+    .finteh__items--one {
+        margin-bottom: 110px;
+    }
+
+    .finteh__buttons--yellow {
+        margin-right: 0;
+    }
+
+    .finteh__paragraph--mobile {
+        max-width: 700px;
+        float: left;
+        padding-top: 102px;
+        padding-bottom: 102px;
+    }
+
+    .finteh__item--four {
+        margin-bottom: 180px;
+    }
+
+    .finteh__items--three {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .finteh__item--five {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .finteh__paragraphs--mobile--two {
+        display: none;
+    }
+
+    .finteh__paragraphs--one {
+        padding-top: 88px;
+        padding-right: 0;
+    }
+
+    .finteh__item--five>h2 {
+        padding-bottom: 10px;
+    }
+
+    .finteh__item--five>img {
+        display: none;
+    }
+
+    .finteh__item--six>img {
+        display: block;
+    }
+
+    .finteh__item--six {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1235px) {
+    .finteh__item--sixteen {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        align-items: center;
+        justify-items: center;
+    }
+}
