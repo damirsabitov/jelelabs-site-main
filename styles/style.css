@@ -1,5 +1,13 @@
 @import 'fonts.css';
 
+.fira-code-uniquifier {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
 * {
     text-decoration: none;
     list-style: none;
@@ -11,6 +19,15 @@
     --container-padding-inline: 16px;
     --container--apps-max-width-medium: calc(1400px + (var(--container-padding-inline) * 2));
     --container--medium-max-width-medium: calc(1260px + (var(--container-padding-inline) * 2));
+    --font-family: "SF Pro Display", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Fira Code";
+    --font3: "Raleway", sans-serif;
+    --font4: "SF Pro Text", sans-serif;
+    --font5: "Ubuntu", sans-serif;
+    --font6: "SF UI Text", sans-serif;
+    --font7: "Mazzard", sans-serif;
+    --font8: "Montserrat", sans-serif;
 }
 
 html {
@@ -25,7 +42,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Fira Code;
+    overflow-x: hidden;
 }
 
 .header {
@@ -46,6 +63,7 @@ body {
     max-width: var(--container--medium-max-width-medium);
     padding-inline: var(--container-padding-inline);
     margin-inline: auto;
+    overflow-x: hidden;
 }
 
 .nav__container {
@@ -72,20 +90,18 @@ body {
 }
 
 .nav__logo__title {
-    color: rgb(0, 0, 0);
-    font-family: 'Ubuntu';
-    font-size: 20px;
+    font-family: var(--font5);
     font-weight: 500;
-    line-height: 23px;
+    font-size: 20px;
     letter-spacing: 0.17em;
     text-transform: uppercase;
+    color: #000;
 }
 
 .nav__logo__description {
-    font-family: 'Ubuntu';
+    font-family: var(--font5);
     font-weight: 400;
     font-size: 10px;
-    line-height: 11px;
     text-transform: lowercase;
     color: #575757;
 }
@@ -160,10 +176,10 @@ body {
 }
 
 .slider__title {
-    color: rgb(0, 0, 0);
-    font-family: 'Fira Code';
-    font-size: 48px;
+    font-family: var(--third-family);
     font-weight: 700;
+    font-size: 48px;
+    color: #000;
     line-height: 63px;
     text-align: left;
     width: min(777px, 100%);
@@ -278,7 +294,7 @@ label.card {
 }
 
 .footer__title {
-    font-family: Fira Code;
+    font-family: var(--second-family);
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
@@ -286,7 +302,7 @@ label.card {
 }
 
 .footer__text {
-    font-family: Fira Code;
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -722,6 +738,7 @@ h4 {
 }
 
 .apps__title {
+    font-family: var(--third-family);
     font-weight: 700;
     font-size: 40px;
     color: #000;
@@ -767,6 +784,7 @@ h4 {
 }
 
 .apps__card--title {
+    font-family: var(--third-family);
     font-weight: 700;
     font-size: 54px;
     color: #000;
@@ -1114,6 +1132,7 @@ h4 {
 /* * finteh */
 
 .finteh__title {
+    font-family: var(--third-family);
     font-weight: 700;
     font-size: 80px;
     color: #000;
@@ -1126,15 +1145,17 @@ h4 {
 }
 
 .paragraph {
+    font-family: var(--third-family);
     font-weight: 600;
     font-size: 26px;
     color: #000;
 }
 
 .title {
+    font-family: var(--third-family);
     font-weight: 700;
     font-size: 40px;
-    color: #000;
+    color: #000
 }
 
 .finteh__items--one {
@@ -1154,10 +1175,12 @@ h4 {
     width: 100%;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+    margin-bottom: 80px;
 }
 
 .finteh__image--phone1 {
     object-fit: cover;
+    width: 100%;
 }
 
 .finteh__buttons {
@@ -1179,6 +1202,7 @@ h4 {
     min-height: 70px;
     border: none;
     background-color: #70ff00;
+    font-family: var(--second-family);
     font-weight: 600;
     font-size: 18px;
     color: #000;
@@ -1224,6 +1248,7 @@ h4 {
 }
 
 .finteh__button--one {
+    font-family: var(--second-family);
     font-weight: 600;
     font-size: 16px;
     text-align: center;
@@ -1231,6 +1256,7 @@ h4 {
 }
 
 .finteh__button--two {
+    font-family: var(--second-family);
     font-weight: 600;
     font-size: 24px;
     text-align: center;
@@ -1382,13 +1408,56 @@ h4 {
     align-items: center;
     min-width: 270px;
     min-height: 154px;
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #000;
 }
 
 .finteh__title--small {
+    font-family: var(--third-family);
     font-weight: 400;
     font-size: 26px;
     text-align: center;
     color: #000;
+}
+
+.finteh06,
+.finteh08 {
+    display: none;
+}
+
+.finteh__zadnik {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain;
+    width: 100%;
+}
+
+.finteh01 {
+    top: 362px;
+}
+
+.finteh02 {
+    top: 1215px;
+    z-index: 1;
+}
+
+.finteh03 {
+    top: 2566px;
+}
+
+.finteh04 {
+    top: 3680px;
+}
+
+.finteh05 {
+    top: 4841px;
+}
+
+.finteh07 {
+    top: 6700px;
 }
 
 /* * finteh_media */
@@ -1581,6 +1650,27 @@ h4 {
 
     .finteh__paragraph--eleven {
         margin-right: 0;
+    }
+
+    .finteh__zadnik {
+        opacity: 0.7;
+    }
+
+    .finteh06,
+    .finteh08 {
+        display: block;
+    }
+
+    .finteh06 {
+        top: 5444px
+    }
+
+    .finteh08 {
+        top: 11800px;
+    }
+
+    .finteh02 {
+        top: 1415px;
     }
 }
 
